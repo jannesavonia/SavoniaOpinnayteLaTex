@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt, oneside, finnish]{scrartcl}
+\documentclass[a4paper, 11pt, oneside, finnish, includehead]{article}%{scrartcl}
 \usepackage[utf8]{inputenc}
 
 \usepackage{cmbright}
@@ -12,18 +12,43 @@
 \usepackage{graphicx}
 \graphicspath{{fig/}} 
 \bibliographystyle{apalike}
-\usepackage{eurosym} %simbolo del euro [\euro]
-\usepackage[a4paper, lmargin=2cm, rmargin=1cm, tmargin=2cm, bmargin=1cm]{geometry}
+\usepackage{eurosym}
+\usepackage[a4paper, lmargin=2cm, rmargin=1cm, tmargin=1cm, bmargin=1cm]{geometry}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{lastpage}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+
+\usepackage{titletoc}
+\dottedcontents{section}[1.5cm]{\bfseries}{2.9em}{1pc}
+\dottedcontents{subsection}[2.25cm]{}{3.3em}{1pc}
+
+%\usepackage{titling}
+%\author{Olli Opiskelija}
+%\title{Opinnäytetyön pohja}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\theauthor}{Tekijän Nimi}
+\newcommand{\thetitle}{Opinnäytetyön pohja}
+\newcommand{\thesubtitle}{Alaotsikko}
+
+\newcommand{\schoolfi}{Koulutusala suomeksi}
+\newcommand{\schooluk}{Koulutusala englanniksi}
+
+\newcommand{\publishdate}{\today} %Julkaisupäivä 
+\newcommand{\totalappendix}{foo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{\theauthor}
+\title{\thetitle}
+\newcommand{\totalpages}{\pageref{LastPage}}
 
 
-\author{Olli Opiskelija}
-\title{Opinnäytetyön pohja}
-\subtitle{Alaotsikko}
 
 \begin{document}
 
 \begin{titlepage}
-  \vspace{-1cm}
   \hspace{-0.8cm}
   \includegraphics[scale=1]{savonia_ammattikorkeakoulu.png}\\[\bigskipamount]
   \noindent\makebox[\linewidth]{\textcolor{savoniamagenta}{  \hspace{-1cm}\rule{\paperwidth}{2cm}}}
@@ -32,7 +57,7 @@
     \textbf{
       \large{\ \\ %Don't remove!
 RAPORTIN TYYPPI -- TUTKINNON TASO\\[1.3ex]
-KOULUTUSALA\\
+\MakeUppercase{\schoolfi}\\
       }
     }
   }
@@ -40,30 +65,87 @@ KOULUTUSALA\\
   \textcolor{savoniamagenta}{
     \textbf{
       \huge{  \ \\ %Don't remove!
-PÄÄOTSIKKO\\
+\MakeUppercase{\thetitle}\\
       }
     }
   }
   \textcolor{black}{
     \large{\ \\ %Don't remove!
-ALAOTSIKKO\\[11.5cm]
+\MakeUppercase{\thesubtitle}\\[11.5cm]
     }
   }
-TEKIJÄ\ \ Etunimi Sukunimi
+  \begin{tabular}{ll}
+TEKIJÄ
+& \theauthor\\
+  \end{tabular}
 \end{titlepage}
 
-Tiivistelmä tänne
+\fancyhead[L]{\begin{tabular}{l}SAVONIA-AMMATTIKORKEAKOULU\\ \ \end{tabular}}
+\fancyhead[R]{\begin{tabular}{l}OPINNÄYTETYÖ\\Tiivistelmä\end{tabular}}
+\pagestyle{fancy}
+
+\noindent
+\begin{tabular}{|p{8.75cm}|p{8.5cm}|}
+\hline
+\multicolumn{2}{|l|}{Koulutusala}\\
+\multicolumn{2}{|l|}{\schoolfi}\\
+\hline
+\multicolumn{2}{|l|}{Tutkinto-ohjelma}\\
+\multicolumn{2}{|l|}{Tähän oikea tutkinto-ohjelma}\\
+\hline
+\multicolumn{2}{|l|}{Työn tekijä(t)}\\
+\multicolumn{2}{|l|}{\theauthor}\\
+\hline
+\multicolumn{2}{|l|}{Työn nimi}\\
+\multicolumn{2}{|l|}{\thetitle}\\
+\hline
+Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalpages\ / \ \totalappendix \\
+\hline
+\multicolumn{2}{|l|}{Toimeksiantaja/Yhteistyökumppani(t)}\\
+\multicolumn{2}{|l|}{Yhteistyökumppanit tähän}\\
+\hline
+\multicolumn{2}{|l|}{Tiivistelmä}\\
+\multicolumn{2}{|l|}{
+\input{tiivistelma}
+}\\ %HUOM: \\ei toimi tiivistelmässä
+\hline
+\multicolumn{2}{|l|}{Avainsanat}\\
+\multicolumn{2}{|l|}{
+\input{avainsanat}
+}\\ %HUOM: \\ei toimi avainsanoissa
+\hline
+\end{tabular}
+
 \pagebreak
 
-Abstract tälle sivulle
+\fancyhead[L]{\begin{tabular}{l}SAVONIA UNIVERSITY OF APPLIED SCIENCES\\ \ \end{tabular}}
+\fancyhead[R]{\begin{tabular}{l}THESIS\\ABSTRACT\end{tabular}}
+\pagestyle{fancy}
+
+Abstract tälle sivulle. Kopsaa edellisen sivun taulukko
 \pagebreak
 
+
+
+\fancyhf{} % sets both header and footer to nothing
+\fancyhead[R]{\thepage\ (\totalpages)}
+
+\setcounter{tocdepth}{3}
 \tableofcontents
 \pagebreak
 
 \section{JOHDANTO}
 
+\subsection{Aliluku}
+\subsubsection{Alialiluku}
+
 \section{OHJEITA LaTeX-POHJAN KÄYTTÖÖN}
 
+\pagebreak
+\appendix
+
+\section{ENSIMMÄINEN LIITE}
+
+\section{TOINEN LIITE}
 
 \end{document}
