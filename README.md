@@ -1,3 +1,3 @@
 # LaTeX-pohja savonian opinnäytetyölle
 
-Katso opinnayte.pdf
+Ohjeet: [opinnayte.pdf](https://github.com/jannesavonia/SavoniaOpinnayteLaTex/blob/main/opinnayte.pdf)
