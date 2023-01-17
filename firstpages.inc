@@ -59,8 +59,15 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 \hline
 \multicolumn{2}{|l|}{Tiivistelmä}\\[1.25ex]
 \multicolumn{2}{|l|}{
+
+%%\vspace{-\topskip}%
+%some text here some text here some text here some text here some text here 
+
+
 \makecell{
+\noindent\begin{minipage}[t][17.5cm][t]{0.95\columnwidth}
 \input{tiivistelma}
+\end{minipage}
 }
 }\\
 \hline
@@ -105,7 +112,9 @@ Date \hspace{1cm} \publishdate & Pages/Appendicies \hspace{1cm} \totalpages\ / \
 \multicolumn{2}{|l|}{Abstract}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
+\noindent\begin{minipage}[t][17.5cm][t]{0.95\columnwidth}
 \input{abstract}
+\end{minipage}
 }
 }\\
 \hline
