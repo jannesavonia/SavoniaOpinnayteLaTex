@@ -1,6 +1,6 @@
 ![alt text](https://github.com/jannesavonia/SavoniaOpinnayteLaTex/blob/main/fig/savonia_ammattikorkeakoulu.png)
 
-# LaTeX-pohja savonian opinnäytetyölle
+# Epävirallinen LaTeX-pohja savonian opinnäytetyölle
 
 
 
