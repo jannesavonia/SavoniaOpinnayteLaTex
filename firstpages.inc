@@ -32,6 +32,7 @@ TEKIJÄ
 
 \fancyhead[L]{\begin{tabular}{l}SAVONIA-AMMATTIKORKEAKOULU\\ \ \end{tabular}}
 \fancyhead[R]{\begin{tabular}{l}OPINNÄYTETYÖ\\Tiivistelmä\end{tabular}}
+\fancyfoot{}
 \pagestyle{fancy}
 
 \noindent
