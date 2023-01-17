@@ -61,7 +61,7 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 \multicolumn{2}{|l|}{
 
 \makecell{
-\noindent\begin{minipage}[t][17.5cm][t]{0.95\columnwidth}
+\noindent\begin{minipage}[t][17.0cm][t]{0.95\columnwidth}
 \input{tiivistelma}
 \end{minipage}
 }
@@ -108,7 +108,7 @@ Date \hspace{1cm} \publishdate & Pages/Appendicies \hspace{1cm} \totalpages\ / \
 \multicolumn{2}{|l|}{Abstract}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
-\noindent\begin{minipage}[t][17.5cm][t]{0.95\columnwidth}
+\noindent\begin{minipage}[t][17.0cm][t]{0.95\columnwidth}
 \input{abstract}
 \end{minipage}
 }
