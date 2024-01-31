@@ -15,6 +15,8 @@
 \bibliographystyle{apalike}
 \usepackage{eurosym}
 \usepackage[a4paper, lmargin=4.3cm, rmargin=1.5cm, tmargin=1cm, bmargin=2cm]{geometry}
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \usepackage{lastpage}
