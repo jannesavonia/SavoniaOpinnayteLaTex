@@ -1,4 +1,5 @@
 \begin{titlepage}
+  \newgeometry{left=2cm, right=1cm, top=1cm, bottom=1cm}
   \hspace{-0.8cm}
   \includegraphics[scale=1]{savonia_ammattikorkeakoulu.png}\\[\bigskipamount]
   \noindent\makebox[\linewidth]{\textcolor{savoniamagenta}{  \hspace{-1cm}\rule{\paperwidth}{2cm}}}
@@ -28,15 +29,18 @@
 TEKIJÄ
 & \theauthor\\
   \end{tabular}
+  \restoregeometry
 \end{titlepage}
 
-\fancyhead[L]{\begin{tabular}{l}SAVONIA-AMMATTIKORKEAKOULU\\ \ \end{tabular}}
+
+
+\fancyhead[L]{\hspace*{-1cm}\begin{tabular}{l}SAVONIA-AMMATTIKORKEAKOULU\\ \ \end{tabular}}
 \fancyhead[R]{\begin{tabular}{l}OPINNÄYTETYÖ\\Tiivistelmä\end{tabular}}
 \fancyfoot{}
 \pagestyle{fancy}
 
 \noindent
-\begin{tabular}{|p{8.75cm}|p{8.5cm}|}
+\hspace*{-1cm}\begin{tabular}{|p{7.75cm}|p{7.5cm}|}
 \hline
 \multicolumn{2}{|l|}{Koulutusala}\\[1.25ex]
 \multicolumn{2}{|l|}{\schoolfi}\\
@@ -62,7 +66,7 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 \multicolumn{2}{|l|}{
 
 \makecell{
-\noindent\begin{minipage}[t][17.0cm][t]{0.95\columnwidth}
+\noindent\begin{minipage}[t][16.0cm][t]{0.95\columnwidth}
 \input{tiivistelma}
 \end{minipage}
 }
@@ -79,12 +83,12 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 
 \pagebreak
 
-\fancyhead[L]{\begin{tabular}{l}SAVONIA UNIVERSITY OF APPLIED SCIENCES\\ \ \end{tabular}}
-\fancyhead[R]{\begin{tabular}{l}THESIS\\ABSTRACT\end{tabular}}
+\fancyhead[L]{\hspace*{-1cm}\begin{tabular}{l}SAVONIA UNIVERSITY OF APPLIED SCIENCES\\ \ \end{tabular}}
+\fancyhead[R]{\begin{tabular}{l}THESIS\\Abstract\end{tabular}}
 \pagestyle{fancy}
 
 \noindent
-\begin{tabular}{|p{8.75cm}|p{8.5cm}|}
+\hspace*{-1cm}\begin{tabular}{|p{7.75cm}|p{7.5cm}|}
 \hline
 \multicolumn{2}{|l|}{Field of Study}\\[1.25ex]
 \multicolumn{2}{|l|}{\schooluk}\\
@@ -109,7 +113,7 @@ Date \hspace{1cm} \publishdate & Pages/Appendicies \hspace{1cm} \totalpages\ / \
 \multicolumn{2}{|l|}{Abstract}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
-\noindent\begin{minipage}[t][17.0cm][t]{0.95\columnwidth}
+\noindent\begin{minipage}[t][16.0cm][t]{0.95\columnwidth}
 \input{abstract}
 \end{minipage}
 }

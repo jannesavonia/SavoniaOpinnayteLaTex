@@ -1,10 +1,11 @@
-\documentclass[a4paper, 11pt, oneside, finnish, includehead]{article}%{scrartcl}
+\documentclass[a4paper, 12pt, oneside, finnish, includehead]{article}%{scrartcl}
 \usepackage[utf8]{inputenc}
 
 \usepackage{cmbright}
 \usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage{xcolor}
+\usepackage{setspace}
 
 \input{savoniacolors.inc}
 
@@ -13,7 +14,7 @@
 \graphicspath{{fig/}} 
 \bibliographystyle{apalike}
 \usepackage{eurosym}
-\usepackage[a4paper, lmargin=2cm, rmargin=1cm, tmargin=1cm, bmargin=1cm]{geometry}
+\usepackage[a4paper, lmargin=4.3cm, rmargin=1.5cm, tmargin=1cm, bmargin=2cm]{geometry}
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \usepackage{lastpage}
@@ -28,9 +29,12 @@
 
 
 \usepackage{titletoc}
-\dottedcontents{section}[1.5cm]{\bfseries}{2.9em}{1pc}
-\dottedcontents{subsection}[2.25cm]{}{3.3em}{1pc}
-\dottedcontents{subsubsection}[2.25cm]{}{3.3em}{1pc}
+%\dottedcontents{section}[1.5cm]{\bfseries}{2.9em}{1pc}
+%\dottedcontents{subsection}[2.25cm]{}{3.3em}{1pc}
+%\dottedcontents{subsubsection}[2.25cm]{}{3.3em}{1pc}
+\dottedcontents{section}[0.5cm]{\bfseries}{2.9em}{1pc}
+\dottedcontents{subsection}[1.25cm]{}{3.3em}{1pc}
+\dottedcontents{subsubsection}[1.25cm]{}{3.3em}{1pc}
 
 \usepackage{makecell}
 \renewcommand{\cellalign}{tl}
