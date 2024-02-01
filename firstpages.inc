@@ -82,7 +82,10 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 \multicolumn{2}{|l|}{Avainsanat}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
+\noindent\begin{minipage}[t]{0.95\columnwidth}
 \input{avainsanat}
+\vspace{5mm}
+\end{minipage}
 }
 }\\
 \hline
@@ -129,7 +132,10 @@ Date \hspace{1cm} \publishdate & Pages/Appendicies \hspace{1cm} \totalpages\ / \
 \multicolumn{2}{|l|}{Keywords}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
+\noindent\begin{minipage}[t]{0.95\columnwidth}
 \input{keywords}
+\vspace{5mm}
+\end{minipage}
 }
 }\\
 \hline
