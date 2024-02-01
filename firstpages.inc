@@ -16,13 +16,20 @@
   \textcolor{savoniamagenta}{
     \textbf{
       \huge{  \ \\ %Don't remove!
-\MakeUppercase{\thetitle}\\
+        \noindent\begin{minipage}[t]{\textwidth}
+            \raggedright
+            \MakeUppercase{\thetitle}\\
+        \end{minipage}
       }
     }
   }
+  \vspace{5mm}
   \textcolor{black}{
     \large{\ \\ %Don't remove!
-\MakeUppercase{\thesubtitle}\\[11.5cm]
+        \noindent\begin{minipage}[t][11.5cm][t]{\textwidth}
+            \raggedright
+            \MakeUppercase{\thesubtitle}\\
+        \end{minipage}
     }
   }
   \begin{tabular}{ll}
