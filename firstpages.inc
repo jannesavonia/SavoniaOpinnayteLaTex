@@ -16,13 +16,20 @@
   \textcolor{savoniamagenta}{
     \textbf{
       \huge{  \ \\ %Don't remove!
-\MakeUppercase{\thetitle}\\
+        \noindent\begin{minipage}[t]{\textwidth}
+            \raggedright
+            \MakeUppercase{\thetitle}\\
+        \end{minipage}
       }
     }
   }
+  \vspace{5mm}
   \textcolor{black}{
     \large{\ \\ %Don't remove!
-\MakeUppercase{\thesubtitle}\\[11.5cm]
+        \noindent\begin{minipage}[t][11.5cm][t]{\textwidth}
+            \raggedright
+            \MakeUppercase{\thesubtitle}\\
+        \end{minipage}
     }
   }
   \begin{tabular}{ll}
@@ -75,7 +82,10 @@ Päiväys \hspace{1cm} \publishdate & Sivumäärä/Liitteet \hspace{1cm} \totalp
 \multicolumn{2}{|l|}{Avainsanat}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
+\noindent\begin{minipage}[t]{0.95\columnwidth}
 \input{avainsanat}
+\vspace{5mm}
+\end{minipage}
 }
 }\\
 \hline
@@ -122,7 +132,10 @@ Date \hspace{1cm} \publishdate & Pages/Appendicies \hspace{1cm} \totalpages\ / \
 \multicolumn{2}{|l|}{Keywords}\\[1.25ex]
 \multicolumn{2}{|l|}{
 \makecell{
+\noindent\begin{minipage}[t]{0.95\columnwidth}
 \input{keywords}
+\vspace{5mm}
+\end{minipage}
 }
 }\\
 \hline
